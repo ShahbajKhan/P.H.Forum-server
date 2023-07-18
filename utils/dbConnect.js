@@ -10,7 +10,7 @@ if (NODE_ENV === "production") {
 } else if (NODE_ENV === "development") {
   DB_URL = DATABASE_LOCAL;
 }
-
+console.log({dbUrl : DB_URL});
 module.exports = () => {
   console.log(`connecting to ${NODE_ENV} DB...`);
   mongoose
